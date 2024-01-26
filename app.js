@@ -31,7 +31,7 @@ const start = async () => {
   try {
     await connectDB(process.env.URL);
     app.listen(port, () =>
-      console.log(`Server is listening on port ${port}...`)
+      console.log(`Jobs server is listening on port ${port}...`)
     );
   } catch (error) {
     console.log(error);
